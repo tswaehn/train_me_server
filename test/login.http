@@ -1,0 +1,27 @@
+### good login
+POST http://localhost:8070/web/
+Content-Type: application/json
+
+{
+  "action": "login",
+  "login": {
+    "auth": {
+      "user_name": "sven",
+      "user_pass": "202CB962AC59075B964B07152D234B70"
+    }
+  }
+}
+
+### failed login
+POST http://localhost:8070/web/
+Content-Type: application/json
+
+{
+  "action": "login",
+  "login": {
+    "auth": {
+      "user_name": "sven",
+      "user_pass": "....."
+    }
+  }
+}
